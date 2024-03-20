@@ -4,9 +4,9 @@ const Schema = mongoose.Schema
 
 let productSchema = new Schema({
     product: {type : String, required: true},
-    cost: {type : number,required: true },
+    cost: {type : Number,required: true },
     description: {type : String, required: true},
-    quantity: {type : number,required: true },
+    quantity: {type : Number,required: true },
 }, {
     collation: 'products',
     timestamps: true
