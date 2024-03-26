@@ -1,5 +1,5 @@
 # version of node to use
-FROM node: 20
+FROM node:20
 
 
 # Directory to save image
@@ -12,6 +12,6 @@ COPY package*.json ./
 RUN npm install
 
 # Copy all files tp /app
-COPY ..
+COPY . .
 EXPOSE 3000
 CMD ["npm", "run", "start"]
