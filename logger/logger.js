@@ -2,6 +2,8 @@ const { format, createLogger, transports } = require('winston');
 require('winston-daily-rotate-file');
 require('winston-mongodb');
 
+require('dotenv').config()
+
 const fileRotateTransport = new transports.DailyRotateFile({
     level: "info",
     filename: "logs/info-%DATE%.log",
@@ -38,6 +40,9 @@ const logger = createLogger({
    new transports.MongoDB({
        level: "info",
        db: process.env.MONGODB_URI,
+       oprtions: {
+         useUnifiedTropology: true
+       },
        collection: "server_logs",
        format: format.combine(
            format.timestamp(),
