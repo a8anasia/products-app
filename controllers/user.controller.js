@@ -8,7 +8,7 @@ exports.findAll = async(req, res) => {
     try{
     const result = await User.find()
     res.status(200).json({data: result})
-    logger.debug("Seccess in reading all users")
+    logger.debug("Success in reading all users")
     } catch(err){
         logger.error("Problem in reading all users")
     }
@@ -49,7 +49,7 @@ exports.create = async(req, res) => {
       console.log("User saved");
     } catch(err) {
       res.status(400).json({data: err})
-      console.log("Problem in saving user");
+      console.log("Problem in saving user", err);
     }
   }
 

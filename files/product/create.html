@@ -72,40 +72,26 @@
   
   <div class="container mt-5">
     <div class="row justify-content-center">
-      <h2>Χρήστες Εφαρμογής</h2>
+      <h2>Προϊόντα Εφαρμογής</h2>
         
         <div class="alert" role="alert"></div>
 
-        <form id="frmUser">
+        <form id="frmProducts">
           <div class="mb-3">
-            <label for="username" class="form-label">Username</label>
-            <input type="text" class="form-control" name="username" id="username" aria-describedby="usernameHelp">
-            <div id="usernameHelp" class="form-text">Πληκτρολογήστε το username που επιθυμείτε.</div>
-          </div>
-          <div class="mb-3">
-            <label for="password" class="form-label">Password</label>
-            <input type="password" class="form-control" name="password" id="password">
-          </div>
-          <div class="mb-3">
-            <label for="name" class="form-label">Όνομα</label>
+            <label for="product" class="form-label">Προϊόν</label>
             <input type="text" class="form-control" name="name" id="name">
           </div>
           <div class="mb-3">
-            <label for="surname" class="form-label">Επίθετο</label>
-            <input type="text" class="form-control" name="surname" id="surname">
+            <label for="Cost" class="form-label">Κόστος</label>
+            <input type="number" class="form-control" name="Cost" id="Cost">
           </div>
           <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" name="email" id="email">
+            <label for="description" class="form-label">Περιγραφή</label>
+            <input type="text" class="form-control" name="description" id="description">
           </div>
           <div class="mb-3">
-            <fieldset>
-              <legend>Στοιχεία Διεύθυνσης</legend>
-              <label for="area" class="form-label">Περιοχή</label><br>
-              <input type="text" class="form-control" name="area" id="area"><br>
-              <label for="road" class="form-label">Οδό</label><br>
-              <input type="text" class="form-control" name="road" id="road">
-            </fieldset>
+            <label for="quantity" class="form-label">Ποσότητα</label>
+            <input type="number" class="form-control" name="quantity" id="quantity">
           </div>
         </form>
         
@@ -131,6 +117,6 @@
     crossorigin="anonymous">
   </script> 
 
-  <script src="../assets/js/user.scripts.js"></script>
+  <script src="../assets/js/product.scripts.js"></script>
 </body>
 </html>

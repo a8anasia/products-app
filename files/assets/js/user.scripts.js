@@ -8,8 +8,7 @@ $(document).ready(function(){
   .done(function(response){
     // console.log(">>", response);
     let data = response.data;
-    //let status = response.status
-    
+    // let status = response.status
     if (data.length>0) { 
         createTbody(data);
     } else {
@@ -52,7 +51,7 @@ $(document).ready(function(){
       let data = response.data;
       let status = response.status
   
-      if (status) { 
+      if (data) { 
           console.log(true,'Επιτυχής εισαγωγή του χρήστη');
           alert(true,'Επιτυχής εισαγωγή του χρήστη');
           $('#frmUser')[0].reset();

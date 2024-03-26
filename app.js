@@ -24,6 +24,7 @@ app.use(cors({
 }))
 
 const user = require('./routes/user.route')
+const product = require('./routes/product.route')
 const userProduct = require('./routes/user.products.routes')
 
 app.use('/', express.static('files'))
@@ -32,6 +33,11 @@ app.use('/api/user-products', userProduct)
 app.use('/api-docs', 
             swaggerUi.serve, 
             swaggerUi.setup(swaggerDocument.options))
+
+
+app.use('/api/products' , product)
+
+
 
 
 // app.listen(port, () => {
