@@ -1,6 +1,6 @@
 const m2s = require('mongoose-to-swagger')
 const User = require('./model/user.model')
-const Product = require('./model/products.model')
+const Product = require('./model/product.model')
 
 exports.options = {
     "components" : {
