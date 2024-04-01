@@ -27,6 +27,8 @@ const user = require('./routes/user.route')
 const product = require('./routes/product.route')
 const userProduct = require('./routes/user.products.routes')
 
+app.use(express.urlencoded({ extended: true }))
+
 app.use('/', express.static('files'))
 app.use('/api/users', user)
 app.use('/api/user-products', userProduct)

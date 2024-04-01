@@ -26,6 +26,10 @@ $(document).ready(function(){
     let email = $("#email").val();
     let area =  $("#area").val();
     let road =  $("#road").val();
+    let address = {
+      area: area,
+      road: road
+    }
 
     const item = {
       'username': username,
@@ -34,7 +38,7 @@ $(document).ready(function(){
       'surname': surname,
       'email': email,
       'area': area,
-      'road': road
+      'address': address
     }
 
     console.log($('.btnSubmit').val(), item);
